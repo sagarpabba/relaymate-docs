@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelayMate - Privacy, Legal & Support Hub</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #0f172a;
+            --muted-color: #64748b;
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --card-bg: #f8fafc;
+            --border-color: #e2e8f0;
+            --hover-border: #93c5fd;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #f8fafc;
+                --muted-color: #94a3b8;
+                --primary-color: #3b82f6;
+                --primary-hover: #60a5fa;
+                --card-bg: #1e293b;
+                --border-color: #334155;
+                --hover-border: #60a5fa;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.35rem 1rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.03em;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--muted-color);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.75rem;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            border-color: var(--hover-border);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .card p {
+            color: var(--muted-color);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+        }
+
+        .card .link-text {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .highlight-banner {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .highlight-banner h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .highlight-banner ul {
+            padding-left: 1.5rem;
+            color: var(--muted-color);
+        }
+
+        .highlight-banner li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            text-align: center;
+            color: var(--muted-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <span class="badge">Google Play Compliance & Legal Center</span>
+            <h1>RelayMate</h1>
+            <p class="subtitle">The private, zero-server message companion for personal caregivers, dual-phone users, and professionals.</p>
+        </div>
+
+        <div class="grid">
+            <a href="privacy.html" class="card">
+                <div>
+                    <div class="card-icon">🛡️</div>
+                    <h2>Privacy Policy</h2>
+                    <p>Details our strict zero-server architecture, notification listener API compliance, client-side encryption, and GDPR/CCPA protections.</p>
+                </div>
+                <span class="link-text">Read Privacy Policy &rarr;</span>
+            </a>
+
+            <a href="terms.html" class="card">
+                <div>
+                    <div class="card-icon">📜</div>
+                    <h2>Terms of Service</h2>
+                    <p>Acceptable use guidelines, caregiver consent requirements, and Google Play subscription/in-app billing policies.</p>
+                </div>
+                <span class="link-text">Read Terms of Service &rarr;</span>
+            </a>
+
+            <a href="support.html" class="card">
+                <div>
+                    <div class="card-icon">🗑️</div>
+                    <h2>Support & Data Deletion</h2>
+                    <p>Step-by-step instructions for data deletion, cache purging, troubleshooting battery optimization, and technical support.</p>
+                </div>
+                <span class="link-text">Visit Help Center &rarr;</span>
+            </a>
+        </div>
+
+        <div class="highlight-banner">
+            <h3>🔒 Built With Privacy by Design</h3>
+            <ul>
+                <li><strong>No Central Developer Servers:</strong> We do not operate external databases or central servers that harvest or store user messages.</li>
+                <li><strong>Client-Side AES-256-GCM:</strong> Messages can be encrypted with keys exchanged directly via offline QR code.</li>
+                <li><strong>Zero Restricted Telephony Permissions:</strong> Completely compliant with Google Play policies without requiring default SMS handler permissions.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 RelayMate. Developed by Sagar Pabba. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

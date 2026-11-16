@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Data Deletion - RelayMate</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1e293b;
+            --muted-color: #64748b;
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --card-bg: #f8fafc;
+            --border-color: #e2e8f0;
+            --success-color: #16a34a;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #f1f5f9;
+                --muted-color: #94a3b8;
+                --primary-color: #3b82f6;
+                --primary-hover: #60a5fa;
+                --card-bg: #1e293b;
+                --border-color: #334155;
+                --success-color: #22c55e;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            margin-bottom: 0.75rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        .meta {
+            color: var(--muted-color);
+            font-size: 0.95rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.4rem;
+        }
+
+        p, ul, ol {
+            margin-bottom: 1.25rem;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-box {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .step-num {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 700;
+            font-size: 0.9rem;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        nav a {
+            margin-right: 1.25rem;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+            color: var(--muted-color);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">← Legal & Support Hub</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+
+        <header>
+            <span class="badge">User Support & Compliance</span>
+            <h1>Help Center & Data Deletion</h1>
+            <p class="meta">Google Play Data Safety & User Support Policy</p>
+        </header>
+
+        <main>
+            <h2>🗑️ How to Delete Your Data</h2>
+            <p>RelayMate uses a <strong>Zero-Server Architecture</strong>. We do not maintain any cloud databases, user accounts, or remote storage containing your messages or notification history. Because no data is stored on remote developer servers, you have full sovereign control over your data right on your device.</p>
+
+            <div class="card">
+                <h3>Option 1: Clear Local Message History</h3>
+                <div class="step-box">
+                    <span class="step-num">1</span>
+                    <div>Open <strong>RelayMate</strong> on your Android phone.</div>
+                </div>
+                <div class="step-box">
+                    <span class="step-num">2</span>
+                    <div>Navigate to the <strong>Message Log</strong> tab.</div>
+                </div>
+                <div class="step-box">
+                    <span class="step-num">3</span>
+                    <div>Tap the <strong>"Clear Log"</strong> button in the top-right toolbar. All 200 stored local entries are immediately and irreversibly deleted from device memory.</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Option 2: Complete Data Purge (Reset App)</h3>
+                <div class="step-box">
+                    <span class="step-num">1</span>
+                    <div>Open Android <strong>Settings</strong> &rarr; <strong>Apps</strong> &rarr; <strong>RelayMate</strong>.</div>
+                </div>
+                <div class="step-box">
+                    <span class="step-num">2</span>
+                    <div>Tap <strong>Storage & Cache</strong> &rarr; <strong>Clear Storage</strong> (or uninstall the app).</div>
+                </div>
+                <div class="step-box">
+                    <span class="step-num">3</span>
+                    <div>All encryption keys, preferences, paired device tokens, and temporary files are permanently wiped from your phone.</div>
+                </div>
+            </div>
+
+            <h2>💬 Contact & Technical Support</h2>
+            <p>Need assistance setting up background relay, pairing two devices via QR code, or troubleshooting battery optimization on Xiaomi/Samsung devices?</p>
+            <ul>
+                <li><strong>Email Support:</strong> <a href="mailto:support@relaymate.app">support@relaymate.app</a> (Typical response time: within 24-48 hours)</li>
+                <li><strong>Bug Reports & Feature Requests:</strong> Open an issue on our GitHub repository at <a href="https://github.com/sagarpabba/RelayMate/issues">github.com/sagarpabba/RelayMate/issues</a></li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+            <div class="card">
+                <strong>Why did messages stop forwarding after a few hours?</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Aggressive manufacturer battery optimizations (MIUI/HyperOS, Samsung OneUI, ColorOS) often put background services to sleep. In Android App Info &rarr; Battery, set RelayMate to <em>"Unrestricted"</em>, and enable <em>"Autostart"</em> if available on your device.</p>
+            </div>
+            <div class="card">
+                <strong>Are my OTP codes sent in plain text?</strong>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">No. When you pair using the in-app QR code, an AES-256-GCM symmetric key is generated. Every message packet is encrypted before leaving the device and decrypted only on your authorized companion phone.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 RelayMate. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

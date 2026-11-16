@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RelayMate</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1e293b;
+            --muted-color: #64748b;
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --card-bg: #f8fafc;
+            --border-color: #e2e8f0;
+            --code-bg: #f1f5f9;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #f1f5f9;
+                --muted-color: #94a3b8;
+                --primary-color: #3b82f6;
+                --primary-hover: #60a5fa;
+                --card-bg: #1e293b;
+                --border-color: #334155;
+                --code-bg: #1e293b;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            margin-bottom: 0.75rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        .meta {
+            color: var(--muted-color);
+            font-size: 0.95rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.4rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p, ul, ol {
+            margin-bottom: 1.25rem;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card strong {
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        nav a {
+            margin-right: 1.25rem;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+            color: var(--muted-color);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">← Legal & Support Hub</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="support.html">Support & Data Deletion</a>
+        </nav>
+
+        <header>
+            <span class="badge">Privacy Policy</span>
+            <h1>RelayMate Privacy Policy</h1>
+            <p class="meta">Effective Date: November 17, 2026 | Last Updated: November 17, 2026</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <strong>Zero-Server Privacy Guarantee:</strong> RelayMate operates under a strict Zero-Server Architecture. The developer does <strong>not</strong> operate central servers, databases, or cloud storage that collect, store, or inspect your forwarded notifications or SMS messages. All message parsing and routing executes locally on your device in volatile memory.
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>RelayMate</strong> ("we," "our," or "the App"). RelayMate is designed as a secure, private message-forwarding companion for personal caregivers, dual-phone owners, and productivity users. We take user privacy extremely seriously and engineered the App from the ground up to minimize data handling.</p>
+            <p>This Privacy Policy explains how information is handled when you use the RelayMate Android application.</p>
+
+            <h2>2. Information Handled & How It Is Used</h2>
+
+            <h3>A. Notification Content (SMS, RCS, Missed Calls)</h3>
+            <ul>
+                <li><strong>Purpose:</strong> To forward incoming notifications (such as SMS verification codes, transactional bank alerts, and missed calls) to your designated receiver endpoints (e.g. secondary phone via FCM, Telegram, Discord, Slack, or Webhook).</li>
+                <li><strong>Processing:</strong> Notification interception occurs in volatile device memory (RAM) via Android's sanctioned <code>NotificationListenerService</code> API. As soon as a message is transmitted to your configured destination, the in-flight buffer is discarded.</li>
+                <li><strong>Storage:</strong> No message content is ever transmitted to or stored on any developer-managed server. A rolling log of the last 200 entries is retained strictly on your physical device in private, sandboxed local storage (encrypted SQLite/SharedPreferences) for your personal auditing.</li>
+            </ul>
+
+            <h3>B. Client-Side End-to-End Encryption (E2EE)</h3>
+            <p>When pairing companion devices, an AES-256-GCM encryption key is exchanged offline directly screen-to-camera via QR code. Payloads transmitted across cloud conduits (such as Firebase Cloud Messaging) are encrypted client-side; intermediaries cannot decrypt or view your plaintext message content.</p>
+
+            <h3>C. Device Diagnostics & Battery Status</h3>
+            <p>To alert you when the sending phone's battery is low (Remote Battery Guardian), the App reads local battery percentage and power status to transmit an automated low-power warning to your paired device.</p>
+
+            <h2>3. Android Permissions Requested & Justifications</h2>
+            <ul>
+                <li><code>BIND_NOTIFICATION_LISTENER_SERVICE</code>: Required by Android to capture incoming notification events so that specified messages and OTPs can be forwarded. RelayMate does <strong>not</strong> require sensitive telephony permissions (such as <code>READ_SMS</code> or <code>RECEIVE_SMS</code>).</li>
+                <li><code>POST_NOTIFICATIONS</code>: Required on Android 13+ to display operational statuses and show incoming message banners with interactive actions (e.g. <code>[Copy OTP]</code>) on receiver devices.</li>
+                <li><code>FOREGROUND_SERVICE_DATA_SYNC</code>: Keeps the background relay watchdog alive, preventing aggressive OEM battery killers from terminating message delivery.</li>
+                <li><code>RECEIVE_BOOT_COMPLETED</code>: Automatically resumes forwarding service after the device is rebooted.</li>
+                <li><code>CAMERA</code>: Used solely to scan the pairing QR code when linking two devices. No images or video recordings are saved or uploaded.</li>
+                <li><code>USE_BIOMETRIC</code>: Enables optional biometric (Fingerprint / Face Unlock / PIN) security to guard access to the app interface and local message history.</li>
+                <li><code>INTERNET</code>: Required to dispatch encrypted messages to your designated endpoints.</li>
+            </ul>
+
+            <h2>4. Third-Party Services & SDKs</h2>
+            <p>RelayMate utilizes a minimal set of industry-standard third-party SDKs to provide core operational features:</p>
+            <ul>
+                <li><strong>Google Play In-App Billing:</strong> Handles one-time Pro purchases and optional subscriptions. Billing transactions are processed directly by Google Play. We never receive or store your payment details.</li>
+                <li><strong>Firebase Cloud Messaging (Google LLC):</strong> Used to deliver push notifications between paired companion devices. Payloads are protected by TLS 1.3 in transit and optional client-side AES-256-GCM encryption.</li>
+                <li><strong>Google Mobile Ads / AdMob (Google LLC):</strong> Free tier users may see non-intrusive banner or rewarded ads. Google AdMob may collect standard device identifiers (e.g., Advertising ID) and crash logs to serve ads and prevent fraud according to Google's Advertising Policies. Pro users experience a 100% ad-free environment.</li>
+            </ul>
+
+            <h2>5. Data Retention & Erasure (GDPR & CCPA Compliance)</h2>
+            <p>We fully comply with global privacy standards including GDPR and CCPA:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> You can review all locally recorded history directly within the in-app <strong>Message Log</strong> tab or export it to a CSV file.</li>
+                <li><strong>Right to Erasure:</strong> Tapping <strong>"Clear Log"</strong> inside the app immediately and permanently purges all recorded messages from device storage. Uninstalling the app permanently erases all remaining application data.</li>
+                <li><strong>No Sale of Personal Data:</strong> We do not sell, rent, trade, or monetize personal information to data brokers, advertisers, or any third party.</li>
+            </ul>
+
+            <h2>6. Children's Privacy</h2>
+            <p>RelayMate is not intended for use by children under the age of 13 (or under 16 in the European Economic Area). We do not knowingly collect personal information from children.</p>
+
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any modifications will be posted to this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions or concerns regarding this Privacy Policy or data handling practices, please contact us at:</p>
+            <p><strong>Support Email:</strong> <a href="mailto:support@relaymate.app">support@relaymate.app</a> (or via our GitHub repository issues)</p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 RelayMate. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
