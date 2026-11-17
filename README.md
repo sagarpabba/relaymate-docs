@@ -1,4 +1,4 @@
-# RelayMate Legal, Support & Public Documentation
+# RelayMate Legal & Support Portal
 
 Official public legal center, Privacy Policy, Terms of Service, and Help Center for **RelayMate** — the private, zero-server message companion for Android.
 
@@ -23,7 +23,3 @@ When GitHub Pages is enabled on this repository, the live URLs are:
 - **`privacy.html`**: Complete Privacy Policy compliant with Google Play Store Developer Policies, GDPR, and CCPA.
 - **`terms.html`**: Terms of Service governing the use of RelayMate.
 - **`support.html`**: User guide detailing step-by-step local data deletion, battery optimization troubleshooting, and contact channels.
-- **`privacy-and-compliance.md`**: Technical compliance breakdown of zero-server architecture and permission declarations.
-- **`architecture-and-tech.md`**: Deep dive into client-side AES-256-GCM encryption and internal components.
-- **`user-guide.md`**: Comprehensive end-user documentation.
-- **`admin-and-integrations.md`**: Guide for Telegram, Discord, Slack, and custom webhook configurations.
